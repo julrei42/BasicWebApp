@@ -13,8 +13,11 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
            return "JuliusR";
-        } else { // TODO extend the programm here
-            return "952";
+        } else if (query.contains("ff676c40")){ // TODO extend the programm here
+            return "22";
+        }
+        else{
+            return"";
         }
     }
 }
