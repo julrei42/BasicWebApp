@@ -41,6 +41,13 @@ public class QueryProcessor {
             }
             return ""+max;
         }
+        else if (query.contains("what is") && query.contains("multiplied by")){
+            String[] splitted = query.split(" ");
+            int i = Integer.parseInt(splitted[2]);
+            int j = Integer.parseInt(splitted[5]);
+            int x = i*j;
+            return ""+ x;
+        }
         else{
             return"";
         }
